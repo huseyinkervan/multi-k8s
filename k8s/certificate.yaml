@@ -7,14 +7,14 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: deneme.huseyinkervan.com
+  commonName: test.huseyinkervan.com
   dnsNames:
     - huseyinkervan.com
-    - deneme.huseyinkervan.com
+    - test.huseyinkervan.com
   acme:
     config:
       - http01:
           ingressClass: nginx
         domains:
           - huseyinkervan.com
-          - deneme.huseyinkervan.com
+          - test.huseyinkervan.com
