@@ -10,12 +10,12 @@ metadata:
 spec:
   tls:
     - hosts:
-      - test.huseyinkervan.com
-      - huseyinkervan.com
+        - test.huseyinkervan.com
+        - huseyinkervan.com
       secretName: k8s-multi-com
   rules:
     - host: test.huseyinkervan.com
-    - http:
+      http:
         paths:
           - path: /?(.*)
             backend:
@@ -26,7 +26,7 @@ spec:
               serviceName: server-cluster-ip-service
               servicePort: 5000
     - host: huseyinkervan.com
-    - http:
+      http:
         paths:
           - path: /?(.*)
             backend:
